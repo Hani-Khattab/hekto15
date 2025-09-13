@@ -51,6 +51,37 @@ body{
     
 }
 /* End Header */
+/* Start Clients */
+
+.clients{
+padding: 50px 0;
+}
+.clients .row{
+    flex-wrap: nowrap;
+    gap: 15px;
+    overflow-x: auto;
+}
+.clients .logo{
+width: calc((100% - 75px ) / 5);
+}
+.clients img{
+    width: 150px;
+    height: 150px;
+}
+@media screen and(max-width: 750px) {
+.clients .logo{
+width: calc((100% - 45px ) /4);
+}
+    
+}
+@media screen and(max-width: 575px) {
+.clients .logo{
+width: calc((100% - 30px ) /3);
+}
+    
+}
+
+/* end Clients */
 
 /* Start Footer */
 .footer{
