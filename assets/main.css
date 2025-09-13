@@ -51,6 +51,32 @@ body{
     
 }
 /* End Header */
+
+              /* Start Newslater */
+
+.newslater{
+    background-image: url(./img/public/newsletter_background1.png);
+    padding: 175px 0;
+    text-align: center;
+    background-attachment: fixed;
+}
+.newslater h2{
+    margin-bottom: 50px;
+    color: #151875;
+    font-size: 35px;
+}
+.shop-btn{
+    transition: all .5s;
+}
+.shop-btn:hover{
+    background-color: #151875;
+}
+
+
+
+/* End Newslater */
+
+
 /* Start Clients */
 
 .clients{
