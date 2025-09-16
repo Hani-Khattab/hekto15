@@ -58,11 +58,21 @@ body{
 }
 .featured-product h2{
     margin-bottom: 30px;
+    color: #1A0B5B;
 }
 .featured-product .row{
     justify-content: flex-start;
     gap: 15px;
 }
+.product{
+    position: relative;
+}
+.badge-sale{
+    position: absolute;
+    top: 20px;
+    left: 4px;
+}
+
 .featured-product .product{
     flex-grow: 1;
     flex-basis: 200px;
@@ -75,20 +85,64 @@ body{
     border-radius: 5px;
 
 }
+.color{
+    width: 14px;
+    height: 4px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.color-one{
+    background-color: #05E6B7;
+}
+.color-two{
+    background-color: #F701A8;
+}
+.color-three{
+    background-color: #00009D;
+    transition: all .6s;
+}
 .product .img{
     background-color: #F6F7FB;
-    padding: 30px;  
-    height: 250px; 
-    object-fit: contain; 
+    padding: 30px;   
+}
+.product .img img{
+    width:200px ;
+    height: 200px;
+    object-fit: contain;
 }
 .product-details{
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10;
+    transition: all .6s;
+}
+.product-details h3{
+    transition: all .6s;
+}
+.product-info span{
+    transition: all .6s;
 }
 
-/* start featred product */
+.product:hover .product-details{
+    background-color: #2F1AC4;
+    border-radius: 5px;
+}
+.product:hover .product-details h3 {
+    color:#FFFFFF;
+}
+.product:hover .color-three{
+    background-color: #FFEAC1;
+}
+.product:hover .product-info span{
+    color: #fff;
+}
+
+
+
+/* End featred product */
 
  /* Start Newslater */
 
