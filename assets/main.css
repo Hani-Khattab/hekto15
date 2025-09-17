@@ -51,10 +51,57 @@ body{
     
 }
 /* End Header */
+
+/* Start Hero Section */
+
+.hero {
+    background-color: #F2F0FF;
+    padding: 50px 0;
+}
+.hero-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 0 25%;
+}
+.hero-lamp img{
+    width: 80%;
+
+}
+.hero-content .hero-lamp{
+    position: relative;
+    bottom: 45px;
+}
+.hero-img{
+    flex: 1 0 30%;
+}
+.hero-img img {
+    width: 80%;
+}
+.text-content .opening-para {
+    color: #FB2E86;
+}
+.text-content h1 {
+    font-family: Josefin Sans;
+    font-size: 53px;
+}
+.text-content .finished-para {
+    color: #8A8FB9;
+}
+
+
+
+
+
+/* End Hero Section */
+
+
+
+
 /* start featred product */
 
 .featured-product{
-    padding: 50px 0;
+    padding: 40px 0;
 }
 .featured-product h2{
     margin-bottom: 30px;
@@ -67,10 +114,10 @@ body{
 .product{
     position: relative;
 }
-.badge-sale{
+.featured-product .product .badge-sale{
     position: absolute;
-    top: 20px;
-    left: 4px;
+    top: 5%;
+    left: 10px;
 }
 
 .featured-product .product{
@@ -143,6 +190,103 @@ body{
 
 
 /* End featred product */
+
+
+
+/* Start Leatest product */
+
+.leatest-product{
+    padding: 40px 0;
+}
+.leatest-product h2{
+    margin-bottom: 30px;
+    color: #1A0B5B;
+}
+.product-tabs {
+  list-style: none;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 58px;
+}
+
+.product-tabs li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #151875;
+  transition: color 0.2s ease;
+}
+
+.product-tabs li a:hover {
+  color: #e91e63;
+}
+.leatest-product{
+    padding: 40px 0;
+}
+.leatest-product h2{
+    margin-bottom: 30px;
+    color: #1A0B5B;
+}
+.leatest-product .row{
+    justify-content: flex-start;
+    gap: 15px;
+}
+.product{
+    width: calc((100% - 30px) / 3);
+    position: relative;
+}
+.leatest-product .product .badge-sale{
+    position: absolute;
+    top: 5%;
+    left: 18px;
+}
+
+.product .img img{
+    width:200px ;
+    height: 200px;
+    object-fit: contain;
+}
+.product-details  {
+    display: flex;
+        flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.product .product-details .product-info{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.current-price {
+      color: #151875; 
+      margin-right: 8px;
+    }
+    .old-price {
+      color: #FB2448; 
+      text-decoration: line-through;
+    }
+
+@media screen and (max-width:990px) {
+    
+      .product{
+        width: calc((100% - 15px) / 2);
+      }   
+}
+@media screen and (max-width:570px) {
+    
+      .product{
+        width: calc((100% - 15px) / 1);
+      }   
+}
+
+
+
+
+
+/* End Leatest product */
+
 
  /* Start Newslater */
 
