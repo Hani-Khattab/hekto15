@@ -220,13 +220,7 @@ body{
 .product-tabs li a:hover {
   color: #e91e63;
 }
-.leatest-product{
-    padding: 40px 0;
-}
-.leatest-product h2{
-    margin-bottom: 30px;
-    color: #1A0B5B;
-}
+
 .leatest-product .row{
     justify-content: flex-start;
     gap: 15px;
@@ -286,6 +280,70 @@ justify-content: space-between;
 
 
 /* End Leatest product */
+
+/* Start Shopex offer */ 
+
+
+.services{
+    padding: 40px 0;
+}
+
+.services h2{
+    margin-bottom: 30px;
+    color: #1A0B5B;
+}
+.services .card{
+    width: calc((100% - 45px) / 4);
+}
+.card  .row {
+      background: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      gap: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      
+    }
+    .card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+     .card img {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1a237e; 
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+   @media screen and (max-width:1200px) {
+    
+      .services .card{
+        width: calc((100% - 45px) / 3);
+      }   
+}
+ @media screen and (max-width:992px) {
+    
+      .services .card{
+        width: calc((100% - 30px) / 2);
+      }   
+}
+ @media screen and (max-width:575px) {
+    
+      .services .card{
+        width: calc((100% - 15px) / 1);
+      }   
+}
+
+/* End Shopex offer */ 
 
 
  /* Start Newslater */
