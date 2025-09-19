@@ -389,10 +389,92 @@ justify-content: space-between;
       color: #1518755e; 
       text-decoration: line-through;
     }
-    
+
 
 
 /* End Trending product*/
+
+/* Start categories */
+
+.categories{
+    padding: 40px 0;
+}
+.categories h2{
+    margin-bottom: 40px;
+}
+
+.categories .row{
+    
+    justify-content: center;
+    gap: 20px;
+}
+.categories .category{
+   flex-grow: 1;
+    flex-basis: 200px;
+    flex-shrink: 0; 
+}
+ .category h3{
+    color: #151875;
+}
+
+.category-card{
+    width: 269px;
+    height: 269px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6F7FB;
+    border-radius: 50%;
+}
+.category-card img {
+    transition: transform 0.3s ease;
+}
+  .category-card:hover img {
+      transform: scale(1.1);
+    }
+   .category-card:hover {
+      border: 5px solid transparent;
+        background: linear-gradient(white, white) padding-box,
+                  linear-gradient(200deg, #6a11cb, #9877E7) border-box;
+      
+}
+.btn-shop {
+      position: absolute;
+      bottom: 15px;
+      background: #00c27a;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 6px 14px;
+      border-radius: 4px;
+      display: none;
+      text-decoration: none;
+    }
+    .category-card:hover .btn-shop {
+      display: inline-block;
+    }
+       .category-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+
+    .category-price {
+      font-size: 14px;
+      color: #1a1a4b;
+      margin-top: 5px;
+    }
+
+
+
+
+
+
+
+
+/* End categories */
+
+
 
 
  /* Start Newslater */
